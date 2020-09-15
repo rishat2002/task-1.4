@@ -1,0 +1,182 @@
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: TT Lakes;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Bold.woff') format('woff'),
+        url('fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.left-sidebar {
+    width: 320px;
+    margin-right: auto;
+    height: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 272px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 18px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 51px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    filter: opacity(75%);
+}
+
+.back {
+    background: url('../img/ic/burger.svg') no-repeat;
+}
+
+.search {
+    background: url("../img/ic/search.svg") no-repeat;
+}
+
+.logo-group {
+    background: url("../img/ic/Group.svg") no-repeat;
+    width: 97px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: 16px;
+}
+
+.menu {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.menu__item {
+    list-style: none;
+    height: 32px;
+    margin: 12px 0px;
+}
+
+.menu__item a::before {
+    content: " ";
+    display: inline-block;
+    height: 32px;
+    width: 4px;
+    background-color: #41F6D7;
+    position: relative;
+    left: -24px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.menu__item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1B1C21;
+    vertical-align: middle;
+}
+
+.menu__item a:hover::before {
+    opacity: 1;
+}
+
+.menu__item a:hover {
+    color: #7E7E82;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.footer-nav .icon {
+    margin-right: 16px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer-nav_search {
+    background: url("../img/ic/chat%20copy.svg") no-repeat;
+}
+
+.footer-nav_message {
+    background: url(../img/ic/chat.svg) no-repeat;
+
+}
+
+.footer-nav_profile {
+    background: url("../img/ic/profile.svg") no-repeat;
+}
+
+.email {
+    margin-top: 16px;
+    color: #1B1C21;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1B1C21;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.languge a {
+    color: #1B1C21;
+    text-decoration: none;
+
+}
+
+.languge a:active {
+    color: #7E7E82;
+
+}
