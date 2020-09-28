@@ -44,6 +44,7 @@ ul{
 button{
     background-color: inherit;
     border: none;
+    cursor: pointer;
 }
 .left-sidebar {
     width: 320px;
