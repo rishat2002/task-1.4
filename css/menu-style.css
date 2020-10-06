@@ -19,22 +19,22 @@ html {
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/TTLakes-Regular.woff') format('woff'),
-        url('fonts/TTLakes-Regular.ttf') format('truetype');
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/TTLakes-Bold.woff') format('woff'),
-        url('fonts/TTLakes-Bold.ttf') format('truetype');
+        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -53,16 +53,14 @@ button{
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 
-.container {
+.left-sidebar__container{
+    margin: 0 auto;
     width: 272px;
     height: 100%;
     padding-top: 18px;
     padding-bottom: 24px;
     display: flex;
     flex-direction: column;
-}
-.left-sidebar__container{
-    margin: 0 auto;
 }
 .header{
     display: flex;
@@ -95,17 +93,15 @@ a:hover {
     margin-right: auto;
     margin-left: 16px;
 }
-.menu {
-    width: 100%;
-}
-.container__menu{
+
+.left-sidebar__menu{
     margin-top: 24px;
 }
-.menu__item {
+.left-sidebar__item {
     margin: 12px 0px;
 }
     
-.menu__item a::before {
+.left-sidebar__item a::before {
     content: " ";
     display: inline-block;
     height: 32px;
@@ -118,35 +114,32 @@ a:hover {
 
 }
 
-.menu__item-link{
+.left-sidebar__item-link{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #1B1C21;
-    vertical-align: middle;
     height: 32px;
 }
 
-.menu__item a:hover::before {
+.left-sidebar__item a:hover::before {
     opacity: 1;
 }
 
-.menu__item a:hover {
+.left-sidebar__item a:hover {
     color: #7E7E82;
 }
 
-.nav {
+.feedback-list {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     height: 40px;
 }
 
-.nav__item {
+.feedback-list__item {
     margin-right: 16px;
 }
 
-.container__footer {
+.left-sidebar__footer {
     margin-top: auto;
 }
 
@@ -163,34 +156,30 @@ a:hover {
     background: url("../img/ic/profile.svg") no-repeat;
 }
 
-.email {
+.footer__email{
+    margin-top: 16px;
     color: #1B1C21;
     display: block;
 }
-.footer__email{
-    margin-top: 16px;
-}
-.number {
+.footer__number {
     font-size: 24px;
     font-weight: bold;
     color: #1B1C21;
     display: block;
-}
-.footer__number{
     margin-top: 12px;
     margin-bottom: 40px;
 }
-.language{
+
+.footer__language{
     display: flex;
 }
-.language__item{
+.footer__item-language{
     margin-right: 7px;
-}
-.language__item-button {
     color: #1B1C21;
 }
 
-.language__item-button:active,.language__item-button:focus {
+
+.footer__item-button:hover,.footer__item-button:focus,.footer__item-button--active{
     color: #7E7E82;
     outline: none;
 }
