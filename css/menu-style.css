@@ -46,14 +46,14 @@ button{
     border: none;
     cursor: pointer;
 }
-.left-sidebar {
+.menu {
     width: 320px;
     margin-right: auto;
     height: 100%;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 
-.left-sidebar__container{
+.menu__container{
     margin: 0 auto;
     width: 272px;
     height: 100%;
@@ -62,7 +62,7 @@ button{
     display: flex;
     flex-direction: column;
 }
-.header{
+.menu__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,11 +81,11 @@ a:hover {
     filter: opacity(75%);
 }
 
-.ui-button--back {
+.menu__close-btn {
     background: url('../img/ic/burger.svg') no-repeat;
 }
 
-.ui-button--search {
+.menu__search--btn {
     background: url("../img/ic/search.svg") no-repeat;
 }
 
@@ -94,14 +94,14 @@ a:hover {
     margin-left: 16px;
 }
 
-.left-sidebar__menu{
+.menu__list{
     margin-top: 24px;
 }
-.left-sidebar__item {
+.menu__item {
     margin: 12px 0px;
 }
     
-.left-sidebar__item a::before {
+.menu__item a::before {
     content: " ";
     display: inline-block;
     height: 32px;
@@ -114,7 +114,7 @@ a:hover {
 
 }
 
-.left-sidebar__item-link{
+.menu__item-link{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -122,11 +122,11 @@ a:hover {
     height: 32px;
 }
 
-.left-sidebar__item a:hover::before {
+.menu__item a:hover::before {
     opacity: 1;
 }
 
-.left-sidebar__item a:hover {
+.menu__item a:hover {
     color: #7E7E82;
 }
 
@@ -139,7 +139,7 @@ a:hover {
     margin-right: 16px;
 }
 
-.left-sidebar__footer {
+.menu__footer {
     margin-top: auto;
 }
 
@@ -156,12 +156,12 @@ a:hover {
     background: url("../img/ic/profile.svg") no-repeat;
 }
 
-.footer__email{
+.menu__email{
     margin-top: 16px;
     color: #1B1C21;
     display: block;
 }
-.footer__number {
+.menu__number {
     font-size: 24px;
     font-weight: bold;
     color: #1B1C21;
@@ -170,16 +170,16 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.footer__language{
+.menu__lang{
     display: flex;
 }
-.footer__item-language{
+.menu__lang-item{
     margin-right: 7px;
     color: #1B1C21;
 }
 
 
-.footer__item-button:hover,.footer__item-button:focus,.footer__item-button--active{
+.menu__lang-item-button:hover,.menu__lang-item-button:focus,.menu__lang-item-button--active{
     color: #7E7E82;
     outline: none;
 }
