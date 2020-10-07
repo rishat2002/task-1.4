@@ -85,7 +85,7 @@ a:hover {
     background: url('../img/ic/burger.svg') no-repeat;
 }
 
-.menu__search--btn {
+.menu__search-btn {
     background: url("../img/ic/search.svg") no-repeat;
 }
 
@@ -170,7 +170,7 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.menu__lang{
+.menu__lang-list{
     display: flex;
 }
 .menu__lang-item{
